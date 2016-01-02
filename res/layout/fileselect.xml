@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#6699CC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/toplinearlay"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mPath"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="路径:"
+            android:textColor="@drawable/blue"
+            android:textSize="18sp" >
+        </TextView>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toplinearlay"
+        android:layout_centerHorizontal="true"
+        android:background="#6699CC"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/buttonConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:clickable="true"
+            android:drawableTop="@drawable/share_qqlogo_xml"
+            android:gravity="center_horizontal"
+            android:padding="20px"
+            android:text="确定"
+            android:textColor="#00ff00" />
+
+        <TextView
+            android:id="@+id/buttonCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:clickable="true"
+            android:drawableTop="@drawable/share_qqlogo_xml"
+            android:gravity="center_horizontal"
+            android:padding="20px"
+            android:text="取消"
+            android:textColor="#00ff00" />
+    </LinearLayout>
+
+</RelativeLayout>
